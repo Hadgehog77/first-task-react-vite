@@ -6,6 +6,13 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const getCurentYear = function  () {
+    return (
+      <div>
+        {new Date().getFullYear()}
+      </div>
+    )
+  }
 
   return (
     <>
@@ -114,6 +121,7 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+      {getCurentYear()}
     </>
   )
 }
